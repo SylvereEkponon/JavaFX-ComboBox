@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.MainController">
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
-      <ComboBox fx:id="combobox" layoutX="33.0" layoutY="25.0" prefWidth="150.0" promptText="Select Name" />
+      <ComboBox fx:id="combobox" layoutX="33.0" layoutY="25.0" onAction="#comboChanged" prefWidth="150.0" promptText="Select Name" />
+      <Label fx:id="myLabel" layoutX="33.0" layoutY="165.0" prefHeight="51.0" prefWidth="150.0" text="Label" />
    </children>
 </AnchorPane>

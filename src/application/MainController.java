@@ -5,12 +5,17 @@ import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 
 public class MainController implements Initializable{
 
+	@FXML
+	public Label myLabel;
+	
 	@FXML
 	public ComboBox<String> combobox;
 	
@@ -21,4 +26,8 @@ public class MainController implements Initializable{
 		combobox.setItems(list);
 	}
 
+	public void comboChanged(ActionEvent event) {
+		myLabel.setText(combobox.getValue());
+
+	}
 }
