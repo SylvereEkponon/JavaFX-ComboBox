@@ -23,11 +23,16 @@ public class MainController implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 	
-		combobox.setItems(list);
+		//combobox.setItems(list);
 	}
 
 	public void comboChanged(ActionEvent event) {
 		myLabel.setText(combobox.getValue());
+
+	}
+	public void btnChanged(ActionEvent event) {
+		//myLabel.setText(combobox.getValue());
+		combobox.getItems().addAll("Sylvere","Anupom","Krishna","Bishnu","Syed");
 
 	}
 }
